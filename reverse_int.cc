@@ -1,6 +1,3 @@
-// reverse_int.cpp : Defines the entry point for the console application.
-//
-
 #include <iostream>
 using namespace std;
 int ReverseInt(int num)
