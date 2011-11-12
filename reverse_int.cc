@@ -16,8 +16,8 @@ int ReverseInt(int num)
 
 int main()
 {
-  int a=456;
-  cout<<ReverseInt(a)<<endl;
+  cout<<ReverseInt(456)<<endl;
+  cout<<ReverseInt(123456789)<<endl;
   return 0;
 }
 
