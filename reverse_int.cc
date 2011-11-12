@@ -3,22 +3,21 @@
 
 #include <iostream>
 using namespace std;
-void ReverseInt(int num, int *array)
+int ReverseInt(int num)
 {
-	if (!num)
-		return;
-	*array=num%10;
-	ReverseInt(num/10,array+1);
+  int result=0;
+  while (num)
+  {
+    result=result*10+num%10;
+    num/=10;
+  }
+  return result;
 }
 
 int main()
 {
-	int a=456;
-	int result[100]={0};
-	ReverseInt(a,result);
-	for (int i=0;result[i]>0;i++)
-		cout<<result[i];
-	cout<<endl;
-	return 0;
+  int a=456;
+  cout<<ReverseInt(a)<<endl;
+  return 0;
 }
 
